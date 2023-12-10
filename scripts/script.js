@@ -29,7 +29,7 @@ slider.addEventListener('input', function () {
     if (Giatri == 100 && userInputValue != '') {
         // Thay đổi link CSS
         var styleLink = document.getElementById('style-link');
-        styleLink.setAttribute('href', '/styles/newstyle.css');
+        styleLink.setAttribute('href', './styles/newstyle.css');
 
         // Thêm thẻ div
         var newDiv = document.createElement('div');
