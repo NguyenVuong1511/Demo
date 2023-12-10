@@ -38,7 +38,7 @@ slider.addEventListener('input', function () {
         document.body.appendChild(newDiv);
 
         var newDiv1 = document.createElement('div');
-        newDiv1.textContent = 'Chúc ' + userInputValue + ' giáng sinh vui vẻ';
+        newDiv1.textContent = 'Chúc ' + userInputValue + ' giáng sinh an lành <3';
         newDiv1.classList.add('Chuc');
         document.body.appendChild(newDiv1);
 
