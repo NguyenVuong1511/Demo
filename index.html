@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css" id="style-link">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <form action="" id="myForm">
+            <h1>NHẬP TÊN</h1>
+            <div class="input-box">
+                <input type="text" id="inputs" autocomplete="off" onkeydown="handleEnter(event)">
+                <input type="submit" id="sb" value="Gửi" onclick="onClick()">
+            </div>
+        </form>
+    </div>
+
+    <div class="slider-container">
+        <input type="range" id="slider" min="0" max="100" value="0" class="slider">
+        <div id="status" class="status">Kéo để có bất ngờ</div>
+    </div>
+
+    <script src="/scripts/script.js" id="script"></script>
+    <script src="/scripts/snowstorm.js" id="script"></script>
+    <script>
+        snowStorm.snowCharacter = '❄'
+    </script>
+</body>
+</html>
