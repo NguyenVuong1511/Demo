@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 50px;
+    background: transparent;
+    border: 2px solid rgb(21, 21, 21);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.wrapper h1 {
+    font-size: 28px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.wrapper .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box {
+    display: flex;
+}
+
+#inputs {
+    color: black;
+}
+
+input {
+    width: 80%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.695);
+    border-radius: 50px;
+    color: rgb(255, 213, 0);
+    text-align: center;
+    font-size: 18px;
+}
+
+#sb {
+    width: 20%;
+    text-align: center;
+}
+
+/* Tuỳ chỉnh phần track */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 30px; /* Chiều cao của thanh trượt */
+    background-color: #ffffff00; /* Màu của phần track */
+    border-radius: 50px; /* Độ cong của mép */
+    outline: none; /* Loại bỏ đường viền mặc định */
+    margin: 0;
+}
+
+/* Tuỳ chỉnh phần thumb (nút trượt) thành ảnh */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 40px; /* Chiều rộng của thanh trượt */
+    height: 50px; /* Chiều cao của thanh trượt */
+    margin-bottom: 10px;
+    background-image: url('../image/a.png'); /* Đường dẫn đến hình ảnh */
+    background-size: cover; /* Đảm bảo hình ảnh đầy đủ kích thước */
+    background-repeat: no-repeat;
+    border: none; /* Loại bỏ đường viền */
+    cursor: pointer; /* Đổi kiểu con trỏ khi di chuyển qua phần thumb */
+}
+
+/* Đối với máy tính */
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url('../image/BgPc.jpg');
+        min-height: 100vh;
+    }
+    .slider-container {
+        width: 30%;
+        text-align: center;
+    }
+    .wrapper {
+        width: 30%;
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        margin-bottom: 50px;
+        background: transparent;
+        border: 2px solid rgb(21, 21, 21);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+    }
+    .wrapper h1 {
+        font-size: 28px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    input {
+        color: black;
+    }
+}
+
+/* Đối với điện thoại */
+@media only screen and (max-width: 767px) {
+    body {
+        background-image: url('../image/Bgm.jpg');
+        background-size: cover;
+    }
+    .slider-container {
+        width: 75%;
+        text-align: center;
+    }
+}
