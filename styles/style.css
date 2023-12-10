@@ -19,6 +19,7 @@ body {
     background: transparent;
     border: 1px solid black;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     color: white;
     border-radius: 40px;
     padding: 30px 40px;
